@@ -96,24 +96,23 @@ contactForm.addEventListener('submit', sendEmail)
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
-
+    
 const scrollActive = () =>{
-    const scrollY = windeow.pageYOffset
+  	const scrollDown = window.scrollY
 
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight,
-                sectionTop = current.offsetTop - 58,
-                sectionId = current.getAttribute('id'),
-                sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+	sections.forEach(current =>{
+		const sectionHeight = current.offsetHeight,
+			  sectionTop = current.offsetTop - 58,
+			  sectionId = current.getAttribute('id'),
+			  sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
 
-                if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-                    sectionsClass.classList.add('active-link')
-                }else{
-                    sectionsClass.classList.remove('active-link')
-                }
-    })
+		if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
+			sectionsClass.classList.add('active-link')
+		}else{
+			sectionsClass.classList.remove('active-link')
+		}                                                    
+	})
 }
-
 window.addEventListener('scroll', scrollActive)
 
 /*=============== SHOW SCROLL UP ===============*/ 
@@ -157,7 +156,13 @@ themeButton.addEventListener('click', () => {
 })
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
-
+const scrollHeader = () =>{
+    const header = document.getElementById('header')
+    // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
+    this.scrollY >= 50 ? header.classList.add('bg-header') 
+                       : header.classList.remove('bg-header')
+}
+window.addEventListener('scroll', scrollHeader)
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 
