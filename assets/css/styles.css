@@ -679,7 +679,54 @@ body.dark-theme {
 
 
 /*=============== TESTIMONIAL ===============*/
+.price-section {
+  background-color: var(--body-color);
+  padding: 50px 0;
+  text-align: center;
+}
+.price-card {
+  display: inline-block;
+  background-color: var(--container-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+}
+.price-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.price-card p {
+  font-size: var(--font-semi-bold);
+  color: var(--title-color);
+  margin-bottom: 20px;
+}
 
+.price-card li{
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.price-card .price {
+  font-size: 36px;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+.price-card button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+.price-card button:hover {
+  background-color: #0056b3;
+}
 
 /* Swiper class */
 
