@@ -601,8 +601,8 @@ body.dark-theme {
 }
 
 .projects__img{
-  width: 280px;
-  /* height: 180px; */
+  width: 320px;
+  height: 200px;
   border-radius: .75rem;
   margin-bottom: 1.25rem;
 }
