@@ -1,0 +1,233 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"/>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Portfolio Chakkapatsaran</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                Kate
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="index.html#home" class="nav__link active-link">
+                            <i class="ri-home-line"></i> Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="index.html#skills" class="nav__link">
+                            <i class="ri-bar-chart-2-line"></i> Skills
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="index.html#qualification" class="nav__link">
+                            <i class="ri-trophy-line"></i> Qualification
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="index.html#services" class="nav__link">
+                            <i class="ri-briefcase-line"></i> Services
+                        </a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="index.html#projects" class="nav__link">
+                            <i class="ri-slideshow-line"></i> Projects
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="index.html#contact" class="nav__link">
+                            <i class="ri-chat-3-line"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__button">
+                <!-- Theme change button -->
+                <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+            
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== CASE STUDY ====================-->
+    <main class="main">
+    <section class="home section" id="home">
+        <h1 class="home__title">myFlix: A Netflix-like Streaming Platform</h1>
+        <p class="home__title">Case Study for Developer Portfolio</p>
+    </section>
+    <!--==================== PROJECTS ====================-->
+    <section class="projects section" id="projects">
+        <h2 class="section__title">Case Study</h2>
+        <br>
+        <div class="container section__border swiper"> 
+            <div class="projects__container swiper">
+                <div class="">
+                    <!--==================== OVERVIEW ====================-->
+                    <div class="projects__content">
+                        <img src="assets/img/myFlix-1.JPG" alt="projects image" class="case-projects__img">
+                    
+                        <div>
+                            <h1 class="projects__title">Overview</h1>
+                            <p>The primary purpose of myFlix is to provide users with a seamless and enjoyable movie-watching experience. 
+                                The platform offers features such as user registration and a personalized user profile. 
+                                Users can save their favorite films for later viewing.
+                            </p>
+                        </div>
+                        <div>
+                            <h1 class="projects__title">Objection</h1>
+                            <ul>
+                                <li><b>User Registration and Authentication:</b> Allow users to create accounts, log in securely, and manage their profiles.</li>
+                                <li><b>Movie Database:</b> Implement a comprehensive movie database that includes movie details.</li>
+                                <li><b>User Interactions:</b> Enable users to save their favorite movies to a personal list.</li>
+                                <li><b>Responsive Design:</b> Ensure the website is accessible and visually appealing on both desktop and mobile devices.</li>
+                                <li><b>Seamless Backend Integration:</b> Connect the React.js frontend with the backend API to ensure smooth data retrieval and updates.</li>
+                            </ul>
+                            <br>
+                        </div>
+                        <!--==================== APPROACH ====================-->
+                    <div class="projects__content">
+                        <img src="assets/img/myflix-3.JPG" alt="projects image" style="width: 500px;">
+                    
+                        <div>
+                            <h1 class="projects__title">Approach</h1>
+                            <h4>The development of the myFlix website involved the following steps:</h4>
+                            <br>
+                            <ul>
+                                <li><b>Frontend Development:</b> React.js was chosen as the frontend framework due to its flexibility and efficiency. The developer designed the user interface, implemented user registration/authentication, and created components for browsing movies and managing user profiles.</li>
+                                <li><b>Backend Integration:</b> To connect the front-end with the backend, an API was developed using Node.js and Express.js. This API served as the bridge for data retrieval and updates. Secure authentication and authorization mechanisms were implemented to protect user data.</li>
+                                <li><b>Database Management:</b> MongoDB was selected as the database system to store movie information and user profiles. The database was structured to support efficient data retrieval.</li>
+                                <li><b>Deployment:</b> The myFlix website was deployed on a Netlify platform, ensuring scalability and availability to a global audience.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--==================== CHALLENGES ====================-->
+                    <div>
+                        <h2 class="projects__title">Challenges</h2>
+                        <h4 class="sub-title">Authentication and Authorization</h4>
+                        <ul>
+                            <li><b>Problem:</b> Ensuring secure user authentication and authorization was crucial to protect user data and sensitive operations. Users needed to have their identities confirmed and their actions properly controlled based on their roles.</li>
+                            <li><b>Challenges:</b></li>
+                            <ul>
+                                <li>• Safeguarding user passwords and sensitive data.</li>
+                                <li>• Balancing user convenience with security.</li>
+                                <li>• Managing user sessions and token expiration.</li>
+                            </ul>
+                            <li><b>Decisions Made:</b></li>
+                            <ul>
+                                <li>• Employed bcrypt hashing to securely store and verify user passwords.</li>
+                                <li>• Implemented token-based authentication with JWTs, providing a balance between security and ease of implementation.</li>
+                            </ul>
+                        </ul>
+                        <br>
+                        <h4 class="sub-title">Cross-Origin Resource Sharing (CORS)</h4>
+                        <ul>
+                            <li><b>Problem:</b> Configuring CORS settings to allow secure cross-origin requests was necessary for the front-end to communicate with the backend. This was crucial because the front-end and back-end might reside in different domains.</li>
+                            <li><b>Challenges:</b></li>
+                            <ul>
+                                <li>• Allowing cross-origin requests without compromising security.</li>
+                                <li>• Ensuring that only trusted domains could access the API.</li>
+                            </ul>
+                            <li><b>Decisions Made:</b></li>
+                            <ul>
+                                <li>• Configured CORS settings on the backend server to specify which origins were allowed to access the API.</li>
+                                <li>• Set up the API to respond with appropriate CORS headers based on the incoming requests' origins.</li>
+                                <li>• Implemented strict CORS policies in production to limit potential security risks.</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--==================== FOOTER ====================-->
+<footer class="footer">
+    <div class="footer__container container">
+        <h1 class="footer__title">Kate</h1>
+        <p>Full-Stack Developer</p>
+
+        <ul class="footer__list">
+            <li>
+                <a href="#home" class="footer__link">Home</a>
+            </li>
+
+            <li>
+                <a href="#skills" class="footer__link">Skills</a>
+            </li>
+
+            <li>
+                <a href="#projects" class="footer__link">Projects</a>
+            </li>
+        </ul>
+
+        <ul class="footer__social">
+            <a href="https://www.linkedin.com/in/chakkapatsaran-keim/" target="_blank" class="footer__social-link">
+                <i class="ri-linkedin-box-line"></i>
+            </a>
+
+            <a href="https://github.com/KateKeim" target="_blank" class="footer__social-link">
+                <i class="ri-github-line"></i>
+            </a>
+
+            <a href="https://dribbble.com/KateKeim" target="_blank" class="footer__social-link">
+                <i class="ri-dribbble-line"></i>
+            </a>
+        </ul>
+
+        <span class="footer__copy">
+            &#169; Copyright Chakkapatsaran. All rights reserved
+        </span>
+    </div>
+</footer>
+
+
+<!--========== SCROLL UP ==========-->
+<a href="" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line"></i>
+</a>
+
+<!--=============== SCROLLREVEAL ===============-->
+<script src="assets/js/scrollreveal.min.js"></script>
+
+<!--=============== SWIPER JS ===============-->
+<script src="assets/js/swiper-bundle.min.js"></script>
+
+<!--=============== EMAIL JS ===============-->
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+
+<!--=============== MAIN JS ===============-->
+<script src="assets/js/main.js"></script>
+</body>
+</html>

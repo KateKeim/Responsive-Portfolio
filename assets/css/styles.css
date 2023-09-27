@@ -1304,3 +1304,22 @@ body.dark-theme {
     font-size: 1.5rem;
   }
 }
+
+/*=============== CASE STUDY ===============*/
+.projects content{
+  display: block;
+  justify-items: center;
+  transition: background .4s; /* for dark mode animation */
+}
+
+.case-projects__img{
+  justify-self: center;
+  width: 564px;
+  height: 455px;
+  border-radius: .75rem;
+  margin-bottom: 1.25rem;
+}
+
+#project{
+  background-color: var(--text-color);
+}
