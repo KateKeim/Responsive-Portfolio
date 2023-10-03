@@ -562,6 +562,14 @@ body.dark-theme {
   transition: transform .8s;
 }
 
+.services__card img{
+  display: block;
+  width: 2rem;
+  color: var(--title-color);
+  margin-bottom: .75rem;
+  transition: transform .8s;
+}
+
 .services__title{
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
@@ -680,6 +688,7 @@ body.dark-theme {
 
 /*=============== PRICE CARD ===============*/
 .price-section {
+  display: none;
   background-color: var(--body-color);
   padding: 50px 0;
   text-align: center;
