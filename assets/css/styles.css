@@ -451,11 +451,13 @@ body.dark-theme {
 }
 
 .skills__name{
+  text-align: center;
   font-size: var(--small-font-size);
   margin-bottom: .25rem;
 }
 
 .skills__subtitle{
+  display: none;
   font-size: var(--tiny-font-size);
   color: var(--text-color-light);
 }
@@ -909,15 +911,6 @@ body.dark-theme {
 .footer__list{
   margin: 2.5rem 0;
   column-gap: 2.5rem;
-}
-
-.footer__list badge-base{
-  background-color: var(--body-color);
-  color: var(--title-color);
-  font-style: var(--smaller-font-size);
-  font-weight: var(--font-medium);
-  padding: .35rem;
-  transition: background .4s; /* for dark mode animation */
 }
 
 .footer__link{
